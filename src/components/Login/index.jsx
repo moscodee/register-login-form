@@ -3,10 +3,7 @@ import CSS from "../CSS/Form.module.css";
 import loginImg from "../../assets/Login.jpg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useReducer } from "react";
 const Login = () => {
-  // const [loginForm,dispatch] = useReducer()
-
   const navigate = useNavigate();
 
   //state input value
