@@ -1,0 +1,39 @@
+.offcanvas {
+  background-color: #bed7dc;
+  position: relative;
+  height: 100vh;
+  width: 8%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top_navbar {
+  position: absolute;
+  right: 20px;
+  display: flex;
+}
+.top_navbar h1 {
+  font-size: 20px;
+  margin: 10px;
+}
+.offcanvas button {
+  border: none;
+  background-color: #bed7dc;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 550;
+}
+.offcanvas button:hover {
+  background-color: #e5ddc5;
+  box-shadow: 0 0 10px #f1eedc;
+}
+.exitBtn {
+  bottom: 20px;
+  position: absolute;
+  background-color: #e5ddc5 !important;
+}
