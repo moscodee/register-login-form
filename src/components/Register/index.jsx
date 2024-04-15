@@ -12,7 +12,7 @@ const Register = () => {
   const [registerForm, dispatch] = useReducer(RegisterReducer, {});
   const [isGenarateCode, setIsGenarateCode] = useState(false);
   const [codeInputValue, setCodeInputValue] = useState(0);
-  //   const [genarateCode, setGenarateCode] = useState(0);
+  const [genarateCode, setGenarateCode] = useState(0);
   const usersDB = JSON.parse(localStorage.getItem("users")) || [];
   const navigate = useNavigate();
   const {
@@ -38,8 +38,7 @@ const Register = () => {
   const handleGenarateCode = (e) => {
     e.preventDefault();
     setIsGenarateCode(!isGenarateCode);
-    // setGenarateCode(Math.floor(Math.random() * 900000 + 100000));
-    dispatch({ type: "GENARATE_CODE" });
+    setGenarateCode(Math.floor(Math.random() * 900000 + 100000));
   };
   const handleSubmitCode = (e) => {
     e.preventDefault();
@@ -52,7 +51,7 @@ const Register = () => {
       });
     } else alert("Wrong Code");
   };
-  console.log(registerForm);
+  console.log(genarateCode);
   const handleSetToStorage = (item, arr) => {
     localStorage.setItem(item, JSON.stringify(arr));
   };
