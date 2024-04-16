@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "TiltNeon-Regular-VariableFont_XROT,YROT";
-  src: url("../public/fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf");
+  font-family: "TiltNeon-Regular";
+  src: url("/fonts/static/TiltNeon-Regular.ttf");
 }
 * {
   margin: 0;
   padding: 0;
-  font-family: "TiltNeon-Regular-VariableFont_XROT,YROT";
+  font-family: "TiltNeon-Regular";
 }
