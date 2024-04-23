@@ -16,7 +16,6 @@ const Login = () => {
   //START
   const getDB = JSON.parse(localStorage.getItem("users"));
   //end
-  console.log(getDB);
   const handleUsername = (e) => {
     setUsername(e.target.value);
   };

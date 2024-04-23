@@ -1,7 +1,13 @@
 import CSS from "../Home/Home.module.css";
 import imageDev from "../../assets/032db574a23b523b79481d8d222a41ca.jpg";
 import Header from "../Header";
+import { useEffect } from "react";
 const Home = () => {
+  useEffect(() => {
+    return () => {
+      console.clear();
+    };
+  });
   return (
     <div>
       <Header />

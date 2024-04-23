@@ -2,7 +2,7 @@ import Header from "../Header";
 import registerImg from "../../assets/red-yellow-register-now-banner-label_686319-583.avif";
 import CSS from "../CSS/Form.module.css";
 import { useForm } from "react-hook-form";
-import { useReducer, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { ErrorMessage } from "@hookform/error-message";
 import RegisterReducer from "../Reducer/RegisterReducer/index.jsx";
 import { useNavigate } from "react-router-dom";
@@ -51,10 +51,16 @@ const Register = () => {
       });
     } else alert("Wrong Code");
   };
-  console.log(genarateCode);
   const handleSetToStorage = (item, arr) => {
     localStorage.setItem(item, JSON.stringify(arr));
   };
+  useEffect(() => {
+    console.log(genarateCode);
+    return () => {
+      console.clear();
+    };
+  }, [isGenarateCode]);
+
   return (
     <>
       <Header />
