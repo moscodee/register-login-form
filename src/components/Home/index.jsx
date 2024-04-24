@@ -6,11 +6,13 @@ const Home = () => {
     <div>
       <Header />
       <div className={CSS.main}>
-        <h1>
+        <h1 className={CSS.description}>
           Welcome! This is my first site with React. If you have account Login
           or Register if you have't.
         </h1>
-        <img src={imageDev} />
+        <div className={CSS.img_container}>
+          <img src={imageDev} />
+        </div>
       </div>
     </div>
   );
