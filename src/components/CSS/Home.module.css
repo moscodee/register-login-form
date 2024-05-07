@@ -1,0 +1,26 @@
+body {
+  background-color: #b3c8cf;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 30px;
+}
+.description {
+  max-width: 45%;
+  margin: 30px;
+  text-align: center;
+}
+.img_container img {
+  width: 75%;
+  mix-blend-mode: darken;
+}
+@media (max-width: 650px) {
+  .img_container img {
+    display: none;
+  }
+}
